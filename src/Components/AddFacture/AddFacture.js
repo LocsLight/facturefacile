@@ -30,13 +30,16 @@ const AddFacture = () => {
         value={newFactureCost}
         onChange={(e) => setNewFactureCost(e.target.value)}></input>
         <FactureContext.Consumer value={contextValue}>
-            { ({updateFactures}) => (<button
-            className='add-facture-form-control btn btn-primary'
-            onClick={() => {updateFactures({
-                title: newFactureTitle,
-                monthlyCost: newFactureCost
-            })
-            }}>Ajouter la facture</button>)
+            { ({updateFactures}) => (
+                <button
+                className='add-facture-form-control btn btn-primary'
+                onClick={() => {updateFactures({
+                    title: newFactureTitle,
+                    monthlyCost: newFactureCost
+                    })
+                }}>Ajouter la facture
+                </button>
+            )
         }
         </FactureContext.Consumer>
         </div>
