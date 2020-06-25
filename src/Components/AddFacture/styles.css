@@ -1,0 +1,9 @@
+.add-facture-container{
+    display: block;
+    margin: auto;
+    width: 340px;
+}
+
+.add-facture-form-control{
+    margin-top: 10px;
+}

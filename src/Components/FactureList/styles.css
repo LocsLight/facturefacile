@@ -1,0 +1,13 @@
+.facture-list-container{
+    margin: auto;
+    box-sizing: border-box;
+    width: 300px;
+}
+.facture-list-content{
+    display: flex;
+    margin-left: 50px;
+    padding: 20px;
+}
+.facture-list-row{
+    display: block;
+}

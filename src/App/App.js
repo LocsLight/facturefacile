@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../logo.svg';
 import './App.css';
 import AddFacture from '../Components/AddFacture/AddFacture';
+import FactureList from '../Components/FactureList/FactureList';
 import { FactureProvider } from '../Context/FactureContext';
 
 function App() {
@@ -15,12 +16,13 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Factile
         </a>
       </header>
       <div className="factures-container">
       <FactureProvider>
       <AddFacture/>
+      <FactureList/>
       </FactureProvider>
       </div>
     </div>
