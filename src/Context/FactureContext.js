@@ -23,10 +23,18 @@ const FactureProvider = ({children}) => {
         setFactures(updatedFactures)
     }
 
+    const editFacture = (factureToUpdate) => {
+        const filteredFacture = factures.filter((facture) => facture.title !== factureToUpdate.title)
+        const updatedFactures = [...filteredFacture, factureToUpdate]
+        localStorage.setItem('protexe-factures', JSON.stringify(updatedFactures))
+        setFactures(updatedFactures)
+    }
+
     return (
         <FactureContext.Provider value={{
             factures, 
-            updateFactures}}>
+            updateFactures,
+            editFacture}}>
            {children}
         </FactureContext.Provider>
     )
