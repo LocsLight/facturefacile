@@ -4,6 +4,7 @@ import './App.css';
 import AddFacture from '../Components/AddFacture/AddFacture';
 import FactureList from '../Components/FactureList/FactureList';
 import { FactureProvider } from '../Context/FactureContext';
+import TotalFacture from '../Components/TotalFacture/TotalFacture';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <div className="factures-container">
       <FactureProvider>
       <AddFacture/>
+      <TotalFacture/>
       <FactureList/>
       </FactureProvider>
       </div>

@@ -5,6 +5,7 @@ const FactureContext = React.createContext()
 const FactureProvider = ({children}) => {
 
     const [factures, setFactures] = useState([]);
+    const [selectedCostInterval, setSelectedCostInterval] = useState('mois')
 
     useEffect(() => {
         setFactures(JSON.parse(localStorage.getItem('portexe-factures')) || [])
@@ -38,9 +39,12 @@ const FactureProvider = ({children}) => {
 
     return (
         <FactureContext.Provider value={{
-            factures, 
+            factures,
             updateFactures,
-            editFacture}}>
+            editFacture,
+            selectedCostInterval,
+            setSelectedCostInterval
+        }}>
            {children}
         </FactureContext.Provider>
     )
