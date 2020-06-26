@@ -16,7 +16,6 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Factile
         </a>
       </header>
       <div className="factures-container">

@@ -14,7 +14,7 @@ const FactureList = () => {
                         <div key={index} className='facture-list-content'>
                             <input type="checkbox"
                             className="form-check-input"
-                            checked={facture.enabled}
+                            checked = {!facture.enabled}
                             onChange={() => editFacture({
                                 title: facture.title,
                                 monthlyCost: facture.monthlyCost,

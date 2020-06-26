@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 100px;
+  height: 50px;
   pointer-events: none;
 }
 
@@ -14,10 +14,10 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 150px;
+  background-color: white;
+  height: 65px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -31,9 +31,9 @@
 .factures-container{
   width: 500px;
   box-shadow: 2px 5px 20px gray;
-  height: 750px;
   margin: auto;
   margin-top: 10px;
+  background-color: rgba(245, 245, 220, 0.815);
 }
 
 @keyframes App-logo-spin {
